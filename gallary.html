@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/grid.css"
+    <title>BILLY BEER</title>
+</head>
+<body>
+    <header>
+        <div>
+            <a href="index.html" id="logoLink"><img src="img/logojpg.jpg" alt="logo" class="logo"></a>
+        </div>
+        <div id="navHeader">
+            <a class="lnk" href="index.html" ><span class="l-txt">BILLY BEER</span></a>
+        </div>
+        <div id="hamburger" onclick="hamburger()">
+            <i class="fa fa-solid fa-bars fa-sharp"></i>
+        </div>
+        <nav id="navBar" class="navigation">
+            <ul id="navList">
+                <li><a class="lnk" href="index.html">HOME</a></li>
+                <li><a class="lnk" href="#">GALLERY</a></li>
+                <li><a class="lnk" href="history.html">HISTORY</a></li>
+                <li><a class="lnk" href="history.html#contactMe">CONTACT</a></li>
+                <li><a href="gallary.html#cartSection"><i class="fa fa-shopping-cart space-left-right" aria-hidden="true"></i></a></li>
+                <li><i class="fa fa-search space-left-right" aria-hidden="true"></i></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="main">
+        <section class="topSection">
+            <h1>OUR PRODUCTS & OFFERS</h1>
+            <div class="gridSlide">
+                <a class="before" onclick="nextImg(-1)">❮</a>
+                <div id="slideshow">
+                    <div class="ourProduct">
+                        <img class="ourProductImg" src="img/9.jpeg" alt="img9">
+                        <h3>50% discount on first five drinks</h3>
+                        
+                    </div>
+                    <div class="ourProduct">
+                        <img class="ourProductImg" src="img/3.jpeg" alt="img3">
+                        <h3>60% discount on weeks ends</h3>
+                    </div>
+                    <div class="ourProduct">
+                        <img class="ourProductImg" src="img/2.jpeg" alt="img2">
+                        <h3>Five drinks are absolutely free on a party of 10 members</h3>
+                    </div>
+                    <div class="ourProduct">
+                        <img class="ourProductImg" src="img/8.jpeg" alt="img8">
+                        <h3>Early bird discount is also available</h3>
+                        
+                    </div>
+                    <div class="ourProduct">
+                        <img class="ourProductImg" src="img/5.jpeg" alt="img5">
+                        <h3>20% additional discount on the all the beers
+                        </h3>
+                        
+                    </div>
+                    <div class="ourProduct">
+                        <img class="ourProductImg" src="img/7.jpeg" alt="img7">
+                        <h3>50% discount on first five drinks</h3>
+                    </div>
+                </div>
+                <a class="after" onclick="nextImg(1)">❯</a>
+            </div>
+        </section>
+        
+        <section id="cartSection">
+            <h1>CART ITEMS</h1>
+            <div class="gridCart">
+                <div class="addedToCart">
+                    <ul>
+                        <li><b>Product Name</b></li>
+                        <li>Billy strong</li>
+                        <li>Billy light</li>
+                        <li>Sunkissed lager</li>
+                    </ul>
+                    <ul>
+                        <li><b>Product Qty</b></li>
+                        <li>3 items</li>
+                        <li>1 items</li>
+                        <li>4 items</li>
+                    </ul>
+                </div>
+                <div class="details">
+                    <p>Total Number of products: 8</p> 
+                    <p>Total Cost: $59.99</p> 
+                    <Button class="orderButton">Place Order</Button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <footer>
+        <a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+        <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+        <a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
+
